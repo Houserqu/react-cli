@@ -14,6 +14,25 @@
 - pace
 - whatwg-fetch
 
+## 目录结构
+|-build
+|-src
+  |-components
+  |-routes
+  |-utils
+  |-static
+  |-actions.js
+  |-http.js
+  |-index.html
+  |-index.js
+  |-reducer.js
+  |-router.js
+  |-store.js
+.gitignore
+package.json
+webpack.config.js
+webpack.production.config.js
+
 ## 技术分析
 
 ### redux
