@@ -37,12 +37,13 @@
 
 ### 目录结构
 
-|-build
-|-src
-  |-components
-  |-routes
-  |-utils
-  |-static
+```
+|-build/
+|-src/
+  |-components/
+  |-routes/
+  |-utils/
+  |-static/
   |-actions.js
   |-http.js
   |-index.html
@@ -54,6 +55,7 @@
 package.json
 webpack.config.js
 webpack.production.config.js
+```
 
 目录结构说明
 - component
