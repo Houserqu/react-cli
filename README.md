@@ -1,4 +1,6 @@
 # react-cli
+[![TeamCity (simple build status)](https://img.shields.io/badge/react-~15.6.1-green.svg)](https://github.com/facebook/react)
+
 react应用的起步工程和探讨
 
 ## 特点
@@ -36,9 +38,8 @@ package.json
 webpack.config.js
 webpack.production.config.js
 
-## 依赖
+## 更新日志
 
-[package.json](https://github.com/Houserqu/react-cli/blob/master/package.json)
 
 ## 技术分析
 
