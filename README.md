@@ -1,11 +1,22 @@
 <h1 align='center'>react-cli</h1>
-<h3 align='center'>react应用的起步工程和总结</h3>
+<p align='center'>react应用的起步工程和总结</p>
 
-[![TeamCity (simple build status)](https://img.shields.io/badge/react-~15.6.1-green.svg)](https://github.com/facebook/react)
-[![Wercker](https://img.shields.io/badge/redux-%5E3.7.2-green.svg)](https://github.com/reactjs/redux)
-[![Travis](https://img.shields.io/badge/react--router-%5E3.0.3-green.svg)](https://github.com/ReactTraining/react-router)
-[![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://opensource.org/licenses/MIT)
-[![TeamCity (simple build status)](https://img.shields.io/badge/pull%20requests-welcome-blue.svg)](https://github.com/Houserqu/react-cli/pulls)
+<p align='center'>
+  <a href="https://github.com/facebook/react">
+    <img src="https://camo.githubusercontent.com/edda976676ecfa3993474b1c1d7bcd120cfd2011/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f72656163742d25374531352e362e312d677265656e2e737667" alt="TeamCity (simple build status)" data-canonical-src="https://img.shields.io/badge/react-%7E15.6.1-green.svg" style="max-width:100%;">
+  </a>
+  <a href="https://github.com/reactjs/redux">
+    <img src="https://camo.githubusercontent.com/9450857857183c28a628e3986dd3753a0a76d5b5/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f72656475782d253545332e372e322d677265656e2e737667" alt="Wercker" data-canonical-src="https://img.shields.io/badge/redux-%5E3.7.2-green.svg" style="max-width:100%;">
+  </a>
+  <a href="https://github.com/ReactTraining/react-router">
+    <img src="https://camo.githubusercontent.com/b7a8d8cd8681575533ed05805f61c8f55a21f0f3/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f72656163742d2d726f757465722d253545332e302e332d677265656e2e737667" alt="Travis" data-canonical-src="https://img.shields.io/badge/react--router-%5E3.0.3-green.svg" style="max-width:100%;">
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://camo.githubusercontent.com/3f7996bf7bd441deb7199c498aaa835164dee8da/68747470733a2f2f696d672e736869656c64732e696f2f6475622f6c2f766962652d642e737667" alt="DUB" data-canonical-src="https://img.shields.io/dub/l/vibe-d.svg" style="max-width:100%;"></a>
+  <a href="https://github.com/Houserqu/react-cli/pulls">
+    <img src="https://camo.githubusercontent.com/ef7f9a5121a87ec0b41fbf403d164240737178e8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f70756c6c25323072657175657374732d77656c636f6d652d626c75652e737667" alt="TeamCity (simple build status)" data-canonical-src="https://img.shields.io/badge/pull%20requests-welcome-blue.svg" style="max-width:100%;">
+  </a>
+</p>
 
 ## 特点
 
