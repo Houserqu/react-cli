@@ -1,7 +1,7 @@
 # react-cli
-<center>
-[![TeamCity (simple build status)](https://img.shields.io/badge/react-~15.6.1-green.svg)](https://github.com/facebook/react)
-</center>
+
+:[![TeamCity (simple build status)](https://img.shields.io/badge/react-~15.6.1-green.svg)](https://github.com/facebook/react):
+
 react应用的起步工程和探讨
 
 ## 特点
