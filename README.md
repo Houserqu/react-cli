@@ -23,7 +23,9 @@ react应用的起步工程和探讨
 - [pace](https://github.com/HubSpot/pace)
 - [whatwg-fetch](https://github.com/github/fetch)
 
-## 目录结构
+## 项目构建
+
+### 目录结构
 
 |-build
 |-src
@@ -42,6 +44,27 @@ react应用的起步工程和探讨
 package.json
 webpack.config.js
 webpack.production.config.js
+
+目录结构说明
+- component
+
+### 开发说明
+
+克隆项目:
+
+``git clone https://github.com/Houserqu/react-cli.git
+
+进入项目目录安装依赖:
+
+`` npm i 
+
+开发:
+
+`` npm run dev
+
+构建:
+
+`` npm run build
 
 ## 更新日志
 
