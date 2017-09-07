@@ -3,9 +3,8 @@
 [![TeamCity (simple build status)](https://img.shields.io/badge/react-~15.6.1-green.svg)](https://github.com/facebook/react)
 [![Wercker](https://img.shields.io/badge/redux-%5E3.7.2-green.svg)](https://github.com/reactjs/redux)
 [![Travis](https://img.shields.io/badge/react--router-%5E3.0.3-green.svg)](https://github.com/ReactTraining/react-router)
-
 [![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://opensource.org/licenses/MIT)
-<iframe src="https://ghbtns.com/github-btn.html?user=twbs&repo=bootstrap&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+[![TeamCity (simple build status)](https://img.shields.io/badge/pull%20requests-welcome-blue.svg)](https://github.com/Houserqu/react-cli/pulls)
 
 react应用的起步工程和探讨
 
