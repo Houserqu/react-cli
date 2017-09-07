@@ -52,19 +52,27 @@ webpack.production.config.js
 
 克隆项目:
 
-``git clone https://github.com/Houserqu/react-cli.git
+```bash
+git clone https://github.com/Houserqu/react-cli.git
+```
 
 进入项目目录安装依赖:
 
-`` npm i 
+```bash
+npm i 
+```
 
 开发:
 
-`` npm run dev
+```bash 
+npm run dev
+```
 
 构建:
 
-`` npm run build
+```bash 
+npm run build
+```
 
 ## 更新日志
 
