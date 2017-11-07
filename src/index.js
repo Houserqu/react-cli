@@ -8,6 +8,9 @@ import Router from './router';
 import './utils/pace.js';
 import './utils/pace.css';
 
+// mock
+import './utils/mock';
+
 ReactDOM.render(
   <Provider store={store}>
     <Router />
