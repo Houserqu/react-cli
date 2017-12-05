@@ -1,10 +1,10 @@
 {
-  "name": "smrs-admin",
+  "name": "react-cli",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --progress --profile --colors --hot",
+    "dev": "webpack-dev-server --progress --profile --colors --hot --history-api-fallback --host 0.0.0.0 --port 8080",
     "build": "webpack --progress --profile --colors --config  webpack.production.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -28,8 +28,6 @@
     "babel-preset-react-hmre": "^1.1.1",
     "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.23.1",
-    "eslint": "^4.5.0",
-    "eslint-plugin-react": "^7.3.0",
     "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.29.0",
     "mockjs": "^1.0.1-beta3",
@@ -40,5 +38,9 @@
     "url-loader": "^0.5.9",
     "webpack": "^3.5.0",
     "webpack-dev-server": "^2.5.0"
+  },
+  "theme": {
+    "@brand-primary": "#2fc2ba",
+    "@tabs-color": "#2fc2ba"
   }
 }

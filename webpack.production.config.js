@@ -1,11 +1,12 @@
-var path = require('path');
-var HtmlwebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
+const HtmlwebpackPlugin = require('html-webpack-plugin');
 
 //定义了一些文件夹的路径
-var ROOT_PATH = path.resolve(__dirname);
-var APP_PATH = path.resolve(ROOT_PATH, 'src');
-var BUILD_PATH = path.resolve(ROOT_PATH, 'build');
-var TEM_PATH = path.resolve(APP_PATH, 'index.html');
+const ROOT_PATH = path.resolve(__dirname);
+const APP_PATH = path.resolve(ROOT_PATH, 'src');
+const BUILD_PATH = path.resolve(ROOT_PATH, 'build');
+const TEM_PATH = path.resolve(APP_PATH, 'index.html');
 
 module.exports = {
   //项目的文件夹 可以直接用文件夹名称 默认会找index.js 也可以确定是哪个文件名字
@@ -15,7 +16,7 @@ module.exports = {
   //输出的文件名 合并以后的js会命名为bundle.js
   output: {
     path: BUILD_PATH,
-    filename: 'bundle?[hash].js'
+    filename: '[hash].js'
   },
   module: {
     rules: [
@@ -27,19 +28,33 @@ module.exports = {
             options:{
               presets:['react','es2015','stage-0'],
               plugins:[
-                //配置antd的按需引入
-                [
-                  'import',{
-                    libraryName:'antd',
-                    style:'css'
-                  }
-                ],
+
+                // 配置antd的按需引入
+                // [
+                //   'import',{
+                //     libraryName:'antd',
+                //     style:'css'
+                //   }
+                // ],
+
+                //react热替换
+                ['react-transform', {
+                  'transforms': [{
+                    'transform': 'react-transform-hmr',
+                    // if you use React Native, pass "react-native" instead:
+                    'imports': ['react'],
+                    // this is important for Webpack HMR:
+                    'locals': ['module']
+                  }]
+                  // note: you can put more transforms into array
+                  // this is just one of them!
+                }]
               ]
             }
           }
         ],
         exclude: /node_modules/,
-        
+
       },
       {
         test: /\.scss$/,
@@ -84,13 +99,20 @@ module.exports = {
       //要把script插入到标签里
       inject: 'body'
     }),
-    
-
-    
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+      },
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false,
+        drop_console: true,
+        drop_debugger: true,
+      },
+    }),
   ],
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  devtool: 'eval-source-map',
-    
 };
